@@ -1,0 +1,419 @@
+/* == General == */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 1000px;
+    width: 100%;
+    background-image: linear-gradient( -45deg, #c0bec8, #e8e7ea);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+/* == MAIN == */
+main{
+    height: 668px;
+    width: 1054px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* == SIDE NAV BAR == */
+.side-navbar{
+    height: 668px;
+    width: 185px;
+    padding: 22px;
+    background-color: #ffffff;
+}
+
+
+/* == Logo == */
+.logo{
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.logo strong{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    color: #1b122f;
+    margin: 0px 0px 0px 10px;
+}
+/* == || End Logo == */
+
+
+/* == Nav Bar Link == */
+.navbar-links{
+    height: 602px;
+    width: 141px;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    position: relative;
+}
+.navbar-links .btnAdd{
+    height: 36px;
+    width: 141px;
+    border: 0;
+    border-radius: 6px;
+    outline: none;
+    background-color: #1b122f;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 14px 0px;
+
+    padding: 0px 0px 0px 44px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.navbar-links .btnAdd i{
+    position: absolute;
+    left: 25px;
+}
+.navbar-links .btnAdd:hover{
+    box-shadow: 0 0 5px #1b122f86;
+    transition: all 200ms ease;
+}
+
+
+/* == Side Menu == */
+.side-menu{
+    height: fit-content;
+    width: 141px;
+    padding: 10px 0px;
+}
+.side-menu a{
+    display: flex;
+    align-items: center;
+    width: 141px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #a5a5a9;
+    text-align: center;
+    padding: 10px 0px 10px 53px;
+    position: relative;
+}
+.side-menu a i{
+    position: absolute;
+    left: 22px;
+    font-size: 16px;
+    color: #8c8797;
+}
+.side-menu a span{
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #a5a5a9;
+}
+.side-menu a:hover i{
+    color: #1b122f;
+    transition: all .4s ease;
+}
+.side-menu a:hover span{
+    color: #1b122f;
+    transition: all .4s ease;
+}
+
+/* == Upgrade == */
+.upgrade{
+    height: fit-content;
+    width: 141px;
+    padding: 10px 0px 0px 0px;
+    border-radius: 8px;
+    background-color: #f9f8ff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.upgrade .svg svg{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+.upgrade p{
+    font-size: 12px;
+    color: #7e7d82;
+    margin: 10px 0px;
+}
+.upgrade p a{
+    color: #8869c3;
+}
+.upgrade .btnUpgrade{
+    height: 38px;
+    width: 124px;
+    border: 0;
+    border-radius: 6px;
+    outline: none;
+    background-color: #1b122f;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 14px 0;
+    position: relative;
+    bottom: 14px;
+}
+.upgrade .btnUpgrade:hover{
+    box-shadow: 0 0 5px #1b122f86;
+    transition: all 200ms ease;
+}
+/* == || End Nav Bar Link == */
+
+/* == || END SIDE NAV BAR == */
+
+
+
+
+
+
+
+
+
+
+
+/* == CONTENT == */
+.content{
+    height: 668px;
+    width: 869px;
+    background-color: #f2f8ff;
+    padding: 22px;
+}
+
+/* == Top Nav == */
+.top-navbar{
+    height: 50px;
+    width: 825px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-navbar .user{
+    display: block;
+}
+.top-navbar .user strong{
+    font-size: 16px;
+    font-weight: 700;
+    color: #1b122f;
+    margin: 0px;
+}
+.top-navbar .user p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #7d7f8c;
+    margin: 0px;
+}
+.top-navbar .access{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.access form{
+    height: 38px;
+    width: 118px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    margin-right: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.access form input{
+    height: 38px;
+    width: 118px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 0px 30px 0px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #1b122f;
+}
+.access form button{
+    height: fit-content;
+    width: fit-content;
+    outline: none;
+    border: 0;
+    background-color: #ffffff00;
+    position: absolute;
+    right: 10px;
+}
+.access form button i{
+    color: #7d7f8c;
+    font-size: 16px;
+}
+.access i{
+    color: #7d7f8c;
+    font-size: 16px;
+}
+.access .notifications{
+    height: 38px;
+    width: 38px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.access .notifications:hover{
+    cursor: pointer;
+}
+.access .notifications:hover i{
+    color: #525255;
+}
+.access .message-alert{
+    height: 38px;
+    width: 38px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.access .message-alert:hover i{
+    color: #525255;
+}
+.access .message-alert .new-message{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+.access .message-alert .new-message .alert{
+    right: 10px;
+    height: 4.5px;
+    width: 4.5px;
+    border-radius: 50%;
+    background-color: #ff006a;
+    margin: 0px;
+}
+/* == Counter == */
+.counter{
+    height: fit-content;
+    width: 825px;
+    padding: 30px 0px 0px 0px;
+}
+.counter-head{
+    height: fit-content;
+    width: fit-content;
+    padding: 0px 0px 16px 0px;
+}
+.counter-head span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1b122f;
+}
+.counter-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.count{
+    height: 78px;
+    width: 190px;
+    border-radius: 8px;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    padding: 15px 0px 15px 15px;
+}
+.count:hover{
+    cursor: pointer;
+    transition: all .4s ease;
+    box-shadow: 6px 2px 12px #d5e3f3af;
+}
+.count-icon{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.count-icon i{
+    font-size: 15px;
+}
+.count-text{
+    width: fit-content;
+    padding: 0px 0px 0px 16px;
+}
+.count-text span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1b122f;
+}
+.count-text p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #7d7f8c;
+    margin: 0;
+}
+
+
+
+
+.sleep{
+    background-color: #fff4ef;
+}
+.sleep i{
+    color: #fe8c43;
+}
+
+.step{
+    background-color: #fcebf3;
+}
+.step i{
+    color: #f16ea8;
+}
+
+
+.food{
+    background-color: #f6f1fe;
+}
+.food i{
+    color: #946efa;
+}
+
+
+.heart{
+    background-color: #f2faff;
+}
+.heart i{
+    color: #32b0fb;
+}
+/* ==  == */
+/* == || END CONTENT == */
+
+/* == || END MAIN == */
