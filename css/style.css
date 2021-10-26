@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 body{
-    height: 1000px;
-    width: 100%;
+    height: 100%;
+    width: 100vw;
     background-image: linear-gradient( -45deg, #c0bec8, #e8e7ea);
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,21 +26,22 @@ ul{
 
 /* == MAIN == */
 main{
-    height: 668px;
-    width: 1054px;
+    height: 100%;
+    width: 100%;
     background-color: #ffffff;
     display: flex;
-    justify-content: space-between;
 }
 
 
 
 /* == SIDE NAV BAR == */
 .side-navbar{
-    height: 668px;
-    width: 185px;
-    padding: 22px;
+    height: 100vh;
+    width: 298px;
+    padding: 22px 22px 22px 30px;
     background-color: #ffffff;
+    float: left;
+    flex: 0 0 298px;
 }
 
 
@@ -64,31 +65,32 @@ main{
 /* == Nav Bar Link == */
 .navbar-links{
     height: 602px;
-    width: 141px;
+    width: 246px;
     box-sizing: border-box;
-    padding: 20px 0px;
+    padding: 16px 0px;
     position: relative;
 }
 .navbar-links .btnAdd{
-    height: 36px;
-    width: 141px;
+    height: 40px;
+    width: 200px;
     border: 0;
     border-radius: 6px;
     outline: none;
     background-color: #1b122f;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: #ffffff;
-    margin: 14px 0px;
+    text-align: center;
+    margin: 10px 0px;
 
-    padding: 0px 0px 0px 44px;
+    padding: 0px 0px 0px 54px;
     position: relative;
     display: flex;
     align-items: center;
 }
 .navbar-links .btnAdd i{
     position: absolute;
-    left: 25px;
+    left: 32px;
 }
 .navbar-links .btnAdd:hover{
     box-shadow: 0 0 5px #1b122f86;
@@ -99,29 +101,31 @@ main{
 /* == Side Menu == */
 .side-menu{
     height: fit-content;
-    width: 141px;
+    width: 246px;
     padding: 10px 0px;
+    position: relative;
+    overflow: hidden;
 }
 .side-menu a{
     display: flex;
     align-items: center;
-    width: 141px;
-    font-size: 12px;
+    width: 200px;
+    font-size: 13px;
     font-weight: 500;
     color: #a5a5a9;
     text-align: center;
-    padding: 10px 0px 10px 53px;
+    padding: 8px 0px 8px 63px;
     position: relative;
 }
 .side-menu a i{
     position: absolute;
-    left: 22px;
+    left: 32px;
     font-size: 16px;
     color: #8c8797;
 }
 .side-menu a span{
     margin: 0px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: #a5a5a9;
 }
@@ -137,7 +141,7 @@ main{
 /* == Upgrade == */
 .upgrade{
     height: fit-content;
-    width: 141px;
+    width: 246px;
     padding: 10px 0px 0px 0px;
     border-radius: 8px;
     background-color: #f9f8ff;
@@ -151,7 +155,7 @@ main{
     margin: auto;
 }
 .upgrade p{
-    font-size: 12px;
+    font-size: 13px;
     color: #7e7d82;
     margin: 10px 0px;
 }
@@ -159,13 +163,13 @@ main{
     color: #8869c3;
 }
 .upgrade .btnUpgrade{
-    height: 38px;
-    width: 124px;
+    height: 40px;
+    width: 200px;
     border: 0;
     border-radius: 6px;
     outline: none;
     background-color: #1b122f;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: #ffffff;
     margin: 14px 0;
@@ -192,16 +196,16 @@ main{
 
 /* == CONTENT == */
 .content{
-    height: 668px;
-    width: 869px;
+    height: 100vh;
+    flex: 1;
     background-color: #f2f8ff;
-    padding: 22px;
+    padding: 22px 22px 22px 30px;
 }
 
 /* == Top Nav == */
 .top-navbar{
-    height: 50px;
-    width: 825px;
+    height: fit-content;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -210,18 +214,20 @@ main{
     display: block;
 }
 .top-navbar .user strong{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     color: #1b122f;
     margin: 0px;
 }
 .top-navbar .user p{
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
-    color: #7d7f8c;
+    color: #1b122f;
     margin: 0px;
+    line-height: 20px;
 }
 .top-navbar .access{
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -244,9 +250,13 @@ main{
     border-radius: 6px;
     background-color: #ffffff;
     padding: 0px 30px 0px 16px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     color: #1b122f;
+    transition: all .6s ease;
+}
+.access form input:focus:before{
+    max-width: 200px;
 }
 .access form button{
     height: fit-content;
@@ -315,30 +325,115 @@ main{
     background-color: #ff006a;
     margin: 0px;
 }
+.drop-down{
+    z-index: 0;
+    position: relative;
+}
+.dropdown-content{
+    height: fit-content;
+    width: 240px;
+    padding: 0px;
+    border-top: 10px solid #8869c3;
+    background-color: #ffffff;
+    z-index: 1;
+    display: flex;
+
+    position: absolute;
+    left: -202px;
+    flex-direction: column;
+    box-shadow: 0px 8px 16px 0px #1b122f33;
+    border-radius: 4px;
+    margin-top: 16px;
+    display: none;
+
+    animation: moveTop .4s ease;
+}
+@keyframes moveTop{
+    from{
+        transform: translateY(5px);
+        opacity:0
+    } 
+    to{
+        opacity:1
+    }
+}
+.dropdown-content a{
+    display: block;
+    width: 240px;
+    height: fit-content;
+    padding: 8px 26px 8px 10px;
+    position: relative;
+
+    font-size: 13px;
+    font-weight: 400;
+    color: #1b122f;
+}
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+.dropdown-content a span{
+    position: absolute;
+    top: 0;
+    right: 4px;
+    font-size: 24px;
+    color: #1b122f;
+    text-align: center;
+    height: 22px;
+}
+.dropdown-content a span:hover{
+    cursor: pointer;
+}
+#allNotifications{
+    font-weight: 600;
+}
+.show {
+    display: block;
+}
+.square{
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #8869c3;
+    position: absolute;
+    top: -14px;
+    right: 16px;
+}
+
+
+
+
+
+
+
+
+
 /* == Counter == */
 .counter{
     height: fit-content;
-    width: 825px;
-    padding: 30px 0px 0px 0px;
+    max-width: 976px;
+    flex: 1;
+    padding: 20px 0px 0px 0px;
 }
 .counter-head{
     height: fit-content;
     width: fit-content;
-    padding: 0px 0px 16px 0px;
+    padding: 0px 0px 5px 0px;
 }
 .counter-head span{
     font-size: 16px;
     font-weight: 600;
     color: #1b122f;
 }
-.counter-content{
+.top-counter-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 0px;
 }
 .count{
-    height: 78px;
-    width: 190px;
+    height: 90px;
+    width: 228px;
     border-radius: 8px;
     background-color: #ffffff;
 
@@ -347,6 +442,7 @@ main{
     justify-content: start;
 
     padding: 15px 0px 15px 15px;
+    margin: 0px 0px 10px;
 }
 .count:hover{
     cursor: pointer;
@@ -375,7 +471,7 @@ main{
     color: #1b122f;
 }
 .count-text p{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     color: #7d7f8c;
     margin: 0;
@@ -413,7 +509,125 @@ main{
 .heart i{
     color: #32b0fb;
 }
-/* ==  == */
+
+
+
+
+/* == MIDDLE COUNTER CONTENT == */
+.middle-counter-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 0px;
+}
+.mid-count{
+    border-radius: 8px;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    padding: 15px 0px 15px 15px;
+    margin: 0px 0px 10px;
+}
+.mid-count:nth-child(1),
+.mid-count:nth-child(3){
+    height: 246px;
+    width: 228px;
+}
+.mid-count:nth-child(2){
+    height: 246px;
+    width: 476.5px;
+}
+.mid-count:nth-child(3){
+    position: relative;
+    padding: 10px;
+}
+.trophy{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #f5ac10;
+}
+.userProfile{
+    height: fit-content;
+    width: 208px;
+    text-align: center;
+}
+.userProfile img{
+    border-radius: 50%;
+    margin: 0px 0px 10px;
+}
+.userProfile h3{
+    color: #1b122f;
+}
+.userProfile p{
+    color: #9388ad;
+    font-size: 13px;
+}
+.profileIcons{
+    height: fit-content;
+    width: 208px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 0;
+}
+.profileIcons .icons{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profileIcons .icons:nth-child(1){
+    background-color: #f3faff;
+}
+.profileIcons .icons:nth-child(1) i{
+    color: #30b9f7;
+}
+.profileIcons .icons:nth-child(2){
+    background-color: #fef3ed;
+}
+.profileIcons .icons:nth-child(2) i{
+    color: #f19459;
+}
+.profileIcons .icons:nth-child(3){
+    background-color: #fdf0f5;
+}
+.profileIcons .icons:nth-child(3) i{
+    color: #ee6c94;
+}
+/* == || END MIDDLE COUNTER CONTENT == */
+
+.bottom-counter-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 0px;
+}
+.bottom-count{
+    height: 162px;
+    width: 230px;
+    border-radius: 8px;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    padding: 15px 0px 15px 15px;
+    margin: 0px 0px 10px;
+}
+
+
 /* == || END CONTENT == */
 
 /* == || END MAIN == */
