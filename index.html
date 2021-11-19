@@ -71,30 +71,61 @@
                             <button class="btn-search-submit" type="submit"><i class='fas fa-search'></i></button>
                         </form>
                         <div class="drop-down">
-                            <a class="notifications dropbtn" onclick="dropDown()" href="#">
-                                <i class="fas fa-bell"></i>
-                                <div class="new-message"><div class="alert"></div></div>
-                            </a>
+                            <a class="notifications dropbtn" onclick="dropOne()" href="#"><i class="fas fa-bell"></i><div class="new-message"><div class="alert"></div></div></a>
 
-                            <div id="dropContent" class="dropdown-content">
-                                <div class="square"></div>
-                                <div class="dropDown-head">
-                                    <h3>Notifications</h3>
+                            <div  class="dropdown-content drop-one">
+                                <div class="alert-head">
+                                    <h2>Notifications</h2>
                                 </div>
+                                <a href="#" class="alert-drop">
+                                    <div class="preview-icon"><i class="fas fa-calendar"></i></div>
+                                    <div class="preview-item">
+                                        <h4>Event Today</h4>
+                                        <p>Just remember that you hav...</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="alert-drop">
+                                    <div class="preview-icon"><i class="fas fa-sliders-h"></i></div>
+                                    <div class="preview-item">
+                                        <h4>Settings</h4>
+                                        <p>Update Dashboard</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="alert-drop">
+                                    <div class="preview-icon"><i class="fas fa-qrcode"></i></div>
+                                    <div class="preview-item">
+                                        <h4>Launch Admin</h4>
+                                        <p>New Admin! Launch</p>
+                                    </div>
+                                </a>
                             </div>
+                            
                         </div>
                         <div class="drop-down">
-                            <a class="message-alert dropbtn" onclick="dropDown()" href="#"><i class="fas fa-envelope"></i><div class="new-message"><div class="alert"></div></div></a>
+                            <a class="message-alert dropbtn" onclick="dropTwo()" href="#"><i class="fas fa-envelope"></i><div class="new-message"><div class="alert"></div></div></a>  
 
-                            <div id="dropContent" class="dropdown-content">
-                                <div class="square"></div>
-                                <div class="dropDown-head">
-                                    <h3>Messages</h3>
+                            <div id="drop-two" class="dropdown-content drop-two">
+                                <div class="alert-head">
+                                    <h2>Messages</h2>
                                 </div>
-                                <a href="#home">New Job Has been Approved <span class="closebtn" title="Close Overlay">×</span></a>
-                                <a href="#home">If it is already listed as a program allowed to access the network, try removing it from the list and adding it again.<span class="closebtn" title="Close Overlay">×</span></a>
-                                <a href="#home">Check any cables and reboot any routers, modems, or other network devices you may be using. <span class="closebtn" title="Close Overlay">×</span></a>
-                                <a id="allNotifications" href="#">See All Notifications..</a>
+                                <a href="#" class="alert-drop">
+                                    <div class="preview-icon">
+                                        <img src="css/img/profile.png" alt="" srcset="">
+                                    </div>
+                                    <div class="preview-item">
+                                        <h4>Chebon K</h4>
+                                        <p>Hi, I hope to get best reviews</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="alert-drop">
+                                    <div class="preview-icon">
+                                        <img src="css/img/profile.png" alt="" srcset="">
+                                    </div>
+                                    <div class="preview-item">
+                                        <h4>Lulu Hassan</h4>
+                                        <p>Hello, hope you are okay today!</p>
+                                    </div>
+                                </a>                              
                             </div>
                         </div>
                     </div>
