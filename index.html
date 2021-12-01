@@ -19,7 +19,7 @@
     <!-- == Fonts == -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
@@ -27,7 +27,7 @@
         <main class="wrapper">
             <div class="side-navbar" id="side-navbar">
                 <div class="logo">
-                    <img src="css/img/Track0Logo.png" alt="Logo Image" height="22px" width="22px">
+                    <img src="css/img/Track0Logo.png" alt="Logo Image" height="28px" width="28px">
                     <strong>Tracko</strong>
                 </div>
                 <div class="navbar-links">
@@ -53,7 +53,11 @@
                     </div>
                 </div>
                 <div class="menuBtn">
-                    <button class="menu-btn"><i class="fas fa-bars"></i></button>
+                    <button class="menu-btn">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </button>
                 </div>
             </div>
             <div class="main-content">
@@ -183,17 +187,63 @@
                         </div>
                         <div class="row">
                             <div class="column">
-                                <div class="count"></div>
+                                <div class="count">
+                                    <div class="track">
+                                        <span>Sleep</span>
+                                        <p>8.3 hrs last night</p>
+                                    </div>
+                                    <div class="track-graph">
+                                        <div class="graph">
+                                            <div class="center">
+                                                <span>12%</span>
+                                                <p>Increment</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="track-tab">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="column">
-                                <div class="count"></div>
+                                <div class="count">
+                                    <div class="top">
+                                        <span>Fitness Activity</span>
+                                        <div class="drop">
+                                            <label for="cars">Month <i class="fas fa-chevron-down"></i></label>
+                                        </div>
+                                    </div>
+                                    <div class="graph">
+                                        <div class="side-axis">
+                                            <p>8k</p>
+                                            <p>6k</p>
+                                            <p>4k</p>
+                                            <p>2k</p>
+                                        </div>
+                                        <div class="graph-box">
+                                            <div class="graph-line">
+                                                
+                                            </div>
+                                            <div class="bottom-axis">
+                                                <span>Mar</span>
+                                                <span>Apr</span>
+                                                <span class="active">May</span>
+                                                <span>June</span>
+                                                <span>July</span>
+                                                <span>Aug</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="column">
                                 <div class="count">
                                     <div class="trophy"><i class="fas fa-trophy"></i></div>
                                     <div class="userProfile">
-                                        <img src="css/img/profile.png" alt="Profile Picture" height="74px" width="74px">
-                                        <h3>Chebon Kibet</h3>
+                                        <img src="css/img/profile.png" alt="Profile Picture" height="90px" width="90px">
+                                        <h3>Amanda Destitry</h3>
                                         <p>Product Designer</p>
                                     </div>
                                     <div class="profileIcons">
@@ -205,10 +255,148 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="column"><div class="count"></div></div>
-                            <div class="column"><div class="count"></div></div>
-                            <div class="column"><div class="count"></div></div>
-                            <div class="column"><div class="count"></div></div>
+                            <div class="column">
+                                <div class="count">
+                                    <div class="tracker">
+                                        <div class="progress-point"></div>
+                                        <div class="left">
+                                            <div class="icon">
+                                                <i class="fas fa-fire-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="right-top">
+                                                <span>Fat Reduce</span>
+                                            </div>
+                                            <div class="right-bottom">
+                                                <p>Progress</p>
+                                                <p>75%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tracker">
+                                        <div class="progress-point"></div>
+                                        <div class="left">
+                                            <i class="fas fa-bed"></i>
+                                        </div>
+                                        <div class="right">
+                                            <div class="right-top">
+                                                <span>Sleeping</span>
+                                            </div>
+                                            <div class="right-bottom">
+                                                <p>Progress</p>
+                                                <p>75%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="count">
+                                    <div class="tracker">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <i class="fas fa-biking"></i>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="right-top">
+                                                <span>Cycling</span>
+                                            </div>
+                                            <div class="right-bottom">
+                                                <p>24 km / Week</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tracker">
+                                        <div class="top">
+                                            <div class="progress-count">
+                                                <p>Progress</p>
+                                                <p>50%</p>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="bar-pos"></div>
+                                                <div class="bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>24 / 30 km</p>
+                                            <span>1 day left</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="count">
+                                    <div class="tracker">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <i class="fas fa-running"></i>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="right-top">
+                                                <span>Running</span>
+                                            </div>
+                                            <div class="right-bottom">
+                                                <p>30 km / Week</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tracker">
+                                        <div class="top">
+                                            <div class="progress-count">
+                                                <p>Progress</p>
+                                                <p>50%</p>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="bar-pos"></div>
+                                                <div class="bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>28 / 30 km</p>
+                                            <span>2 day left</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="count">
+                                    <div class="tracker">
+                                        <div class="progress-point"></div>
+                                        <div class="left">
+                                            <div class="icon">
+                                                <i class="fas fa-fire-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="right-top">
+                                                <span>Fat Reduce</span>
+                                            </div>
+                                            <div class="right-bottom">
+                                                <p>Progress</p>
+                                                <p>75%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tracker">
+                                        <div class="progress-point"></div>
+                                        <div class="left">
+                                            <i class="fas fa-bed"></i>
+                                        </div>
+                                        <div class="right">
+                                            <div class="right-top">
+                                                <span>Sleeping</span>
+                                            </div>
+                                            <div class="right-bottom">
+                                                <p>Progress</p>
+                                                <p>75%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
